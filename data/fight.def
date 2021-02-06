@@ -1,0 +1,936 @@
+:X-Men Second Coming Lifebars
+;Author: Acey
+
+[Files]
+sff = fight.sff
+snd = fight.snd
+
+font1 = font/time.fnt  
+font2 = font/PXHitCounter.fnt     
+font3 = font/MvCName.fnt
+font4 = font/MvCName.fnt
+font5 = font/Power Counter.fnt
+font6 = font/selectnames.fnt
+font7 = font/selectnamesbig.fnt
+font8 = font/TheBattleCont.def
+
+fightfx.sff = fightfx.sff
+fightfx.air = fightfx.air
+common.snd = common.snd
+
+
+[FightFx]
+scale = 2.0
+
+;-----------------------------------------------------------
+[Lifebar]
+;Player 1
+p1.pos    = 0,0
+p1.bg0.spr = 10, 2
+p1.bg0.scale = 1,1
+p1.bg0.layerno = 0
+p1.bg0.offset = -4,-0
+p1.mid.anim = 12	;Life Meter Under
+p1.mid.scale = 1,1
+p1.mid.offset = -4,-0
+p1.front.anim = 14	;Life Meter Top
+p1.front.scale = 1,1
+p1.range.x  = 246,60
+p1.front.offset = -4,0
+
+;Player 2
+p2.pos    = 0,0
+p2.bg0.spr = 10, 3
+p2.bg0.scale = 1,1
+p2.bg0.offset = 318,0
+p2.bg0.layerno = 0
+p2.mid.anim = 13	;Life Meter Under
+p2.mid.scale = 1,1
+p2.mid.offset = 318,0
+p2.mid.facing = 1
+p2.front.anim = 15	;Life Meter Top
+p2.front.scale = 1,1
+p2.front.offset = 318,0
+p2.front.facing = 1
+p2.range.x = 390,576
+
+;-------------------------------
+[Simul Lifebar]
+;Player 1
+p1.pos    = 0,0
+p1.bg0.spr = 10, 4
+p1.bg0.scale = 1,1
+p1.bg0.layerno = 0
+p1.bg0.offset = -4,0
+p1.mid.anim = 12
+p1.mid.scale = 1,1
+p1.mid.offset = -4,0
+p1.front.anim = 14
+p1.front.scale = 1,1
+p1.range.x  = 246,60
+p1.front.offset = -4,0
+
+;Player 2
+p2.pos    = 0,0
+p2.bg0.spr = 10, 5
+p2.bg0.scale = 1,1
+p2.bg0.offset = 318,0
+p2.bg0.layerno = 0
+p2.mid.anim = 13
+p2.mid.scale = 1,1
+p2.mid.offset = 318,0
+p2.mid.facing = 1
+p2.front.anim = 15
+p2.front.scale = 1,1
+p2.front.offset = 318,0
+p2.front.facing = 1
+p2.range.x = 390,576
+
+;Player 3
+p3.pos    = 0,48
+p3.mid.anim = 20
+p3.mid.scale = 1,1
+p3.mid.layerno = 0
+p3.mid.facing = 1
+p3.mid.offset = -4.0
+p3.front.anim = 22
+p3.front.scale = 1,1
+p3.front.facing = 1
+p3.front.layerno = 0
+p3.front.offset = -4,0
+p3.range.x  = 246,60
+
+;Player 4
+p4.pos    = 0,48
+p4.mid.anim = 21
+p4.mid.scale = 1,1
+p4.mid.layerno = 0
+p4.mid.facing = 1
+p4.mid.offset = 318,0
+p4.front.anim = 23
+p4.front.scale = 1,1
+p4.front.facing = 1
+p4.front.offset = 318,0
+p4.front.layerno = 0
+p4.range.x = 390,576
+
+;-------------------------------
+[Turns Lifebar]
+;Player 1
+p1.pos    = 0,0
+p1.bg0.spr = 10,6
+p1.bg0.scale = 1,1
+p1.bg0.layerno = 0
+p1.bg0.offset = -4,0
+p1.mid.anim = 12
+p1.mid.scale = 1,1
+p1.mid.offset = -4,0
+p1.front.anim = 14
+p1.front.scale = 1,1
+p1.range.x  = 246,60
+p1.front.offset = -4,0
+
+;Player 2
+p2.pos    = 0,0
+p2.bg0.spr = 10,7
+p2.bg0.scale = 1,1
+p2.bg0.offset = 318,0
+p2.bg0.layerno = 0
+p2.mid.anim = 13
+p2.mid.scale = 1,1
+p2.mid.offset = 318,0
+p2.mid.facing = 1
+p2.front.anim = 15
+p2.front.scale = 1,1
+p2.front.offset = 318,0
+p2.front.facing = 1
+p2.range.x = 390,576
+
+;-----------------------------------------------------------
+[Powerbar]
+Player 1
+p1.pos    = 0,0
+p1.front.anim = 43
+p1.front.scale = 1,1
+p1.front.layerno = 0
+p1.range.x = 238,94
+p1.front.offset = -4.0
+
+p1.counter.offset = 250,46
+p1.counter.font = 5,0, 0
+p1.counter.layerno = 0
+
+;Player 2
+p2.pos    = 0,0
+p2.front.anim = 44
+p2.front.scale = 1,1
+p2.front.offset= 318
+p2.front.facing = 1
+p2.front.layerno = 0
+p2.range.x  = 398,542
+
+p2.counter.offset = 388,46
+p2.counter.font = 5,0, 0
+p2.counter.layerno = 0
+
+; --level sounds---
+level1.snd = 21,0
+level2.snd = 21,0
+level3.snd = 21,0
+
+[Begin Action 6] ;P2 - partner
+10,5, 0,0, 1, , A
+
+[Begin Action 7] ;P1 - partner
+10,4, 0,0, 1, , A 
+
+[Begin Action 8] ;P2
+10,3, 0,0, 1, , A 
+
+[Begin Action 9] ;P1
+10,2, 0,0, 1, , A 
+
+[Begin Action 10] ;timer
+10,1, 0,0, 1, , A 
+
+[Begin Action 12] ;lifebar underlay P1
+12,0, 0,0, 1, , ;A 
+
+[Begin Action 13] ;lifebar underlay P2
+12,1, 0,0, 1, , ;A
+
+[Begin Action 14] ;lifebar energy P1
+13,0, 0,0, 4, , ;A
+
+[Begin Action 15] ;lifebar energy P2
+13,1, 0,0, 4, , ;A
+
+
+[Begin Action 20] ;lifebar underlay P1 simul
+22,0, 0,0, 1, , ;A
+
+[Begin Action 21] ;lifebar underlay P1 partner simul
+22,1, 0,0, 1, , ;A
+
+[Begin Action 22] ;lifebar energy P1 simul
+21,0, 0,0, 1, , ;A
+[Begin Action 23] ;lifebar energy P1 partner simul
+21,1, 0,0, 1, , ;A
+
+[Begin Action 40] ;powerbar
+15,1, 0,0, 1, , A
+
+[Begin Action 41] ;powerbar
+15,2, 0,0, 1, , A
+
+[Begin Action 43] ;powerbar P1
+43,0, 0,0, 4, , ;A
+
+[Begin Action 44] ;powerbar P2
+43,1, 0,0, 4, , ;A
+
+
+;-----------------------------------------------------------
+[Face]
+
+;Player 1
+p1.pos    = 0,0
+;p1.bg.anim = 50
+;p1.bg.scale = .5,.5
+;p1.bg.offset = -2,0
+p1.face.spr = 9000,0
+p1.face.facing = 1
+p1.face.scale = .5,.5
+p1.face.offset = 14,14
+
+;Player 2
+p2.pos    = 0,0
+;p2.bg.anim = 51
+;p2.bg.scale = .5,.5
+;p2.bg.offset = 159,0
+p2.face.spr = 9000,0
+p2.face.facing = -1
+p2.face.scale = .5,.5
+p2.face.offset = 622,14
+
+[Begin Action 50] ;Face BG P1
+14,1, 0,0, 5, , A;AS128D128
+
+[Begin Action 51] ;Face BG P2
+14,2, 0,0, 1, , A;AS128D128
+
+;[Begin Action 52] ;powerbar P2
+;11,4, 0,0, 1, , A1;AS128D128
+
+;[Begin Action 53] ;powerbar P2
+;11,5, 0,0, 1, , A;AS128D128
+
+[Simul Face]
+;Player 1
+p1.pos    = 0,0
+;p1.bg.anim = 50
+;p1.bg.scale = .5,.5
+;p1.bg.offset = -2,0
+p1.face.spr = 9000,0
+p1.face.facing = 1
+p1.face.scale = .5,.5
+p1.face.offset = 14,14
+
+;Player 2
+p2.pos    = 0,0
+;p2.bg.anim = 51
+;p2.bg.scale = .5,.5
+;p2.bg.offset = 159,0
+p2.face.spr = 9000,0
+p2.face.facing = -1
+p2.face.scale = .5,.5
+p2.face.offset = 622,14
+
+;Player 3
+p3.pos    = 0,6
+p3.face.spr = 9000,0
+p3.face.scale = .5,.5
+p3.face.offset = 14,59
+
+;Player 4
+p4.pos    = 0,6
+p4.face.spr = 9000,0
+p4.face.facing = -1
+p4.face.scale = .5,.5
+p4.face.offset = 622,59
+
+[Turns Face]
+;Player 1
+p1.pos    = 0,0
+;p1.bg.anim = 50
+;p1.bg.scale = .5,.5
+;p1.bg.offset = -2,0
+p1.face.spr = 9000,0
+p1.face.facing = 1
+p1.face.scale = .5,.5
+p1.face.offset = 14,14
+
+p1.teammate.pos = -82,-4
+p1.teammate.spacing = 28,0
+p1.teammate.face.scale = .5,.5
+p1.teammate.ko.anim = 45
+p1.teammate.ko.scale = 1,1
+p1.teammate.ko.offset = 196,57
+p1.teammate.face.spr = 9000,0
+p1.teammate.face.layerno = 0
+p1.teammate.face.facing = 1
+p1.teammate.face.offset = 204,54
+
+;Player 2
+p2.pos    = 0,0
+;p2.bg.anim = 51
+;p2.bg.scale = 1,1
+;p2.bg.offset = 159,0
+p2.face.spr = 9000,0
+p2.face.facing = -1
+p2.face.scale = .5,.5
+p2.face.offset = 622,14
+
+p2.teammate.pos = 74,-4
+p2.teammate.face.scale = .5,.5
+p2.teammate.spacing = -28,0
+p2.teammate.bg.facing = -1
+p2.teammate.ko.anim = 45
+p2.teammate.ko.offset = 440,57
+p2.teammate.ko.scale = 1,1
+p2.teammate.ko.facing = -1
+p2.teammate.face.spr = 9000,0
+p2.teammate.face.layerno = 0
+p2.teammate.face.facing = -1
+p2.teammate.face.offset = 432,54
+
+[Begin Action 45] ;ko sprite
+71,0, 0,0, 4, , A1;AS128D128
+
+[Begin Action 46] ;ko sprite
+71,1, 0,0, 4, , A1;AS128D128
+
+;-----------------------------------------------------------
+[Name]
+p1.pos = 80,20
+p1.name.font = 4,0, 1
+p2.pos = 558,20
+p2.name.font = 3,0, -1
+
+[Simul Name]
+p1.pos = 80,20
+p1.name.font = 4,0, 1
+p2.pos = 558,20
+p2.name.font = 3,0, -1
+p3.pos = 80,68
+p3.name.font = 4,0, 1
+p4.pos = 558,68
+p4.name.font = 3,0, -1
+
+[Turns Name]
+p1.pos = 80,20
+p1.name.font = 4,0, 1
+p2.pos = 558,20
+p2.name.font = 3,0, -1
+
+;-----------------------------------------------------------
+[Time]
+pos = 318,54
+;counter.offset =
+counter.font = 1,0,0
+framespercount = 70
+
+;-----------------------------------------------------------
+[Combo]
+team1.pos = 12,190;6,95          ;Coords to show
+team1.start.x = -80       ;Starting x-coords
+team1.counter.font = 2,0,1
+team1.counter.shake = 1   ;Set to 1 to shake count on hit
+team1.text.text = P       ;You can use %i to show count in the text, eg "%i Hit!"
+team1.text.font = 2,0,1
+team1.text.offset = 10,0   ;Offset of text
+team1.displaytime = 90    ;Time to show text
+
+team2.pos = 633,190          ;Coords to show
+team2.start.x = 720       ;Starting x-coords
+team2.counter.font = 2,0,-1
+team2.counter.shake = 1   ;Set to 1 to shake count on hit
+team2.text.text = P       ;You can use %i to show count in the text, eg "%i Hit!"
+team2.text.font = 2,0,-1
+team2.text.offset = 10,0   ;Offset of text
+team2.displaytime = 90    ;Time to show text
+
+;-----------------------------------------------------------
+[Round]
+match.wins=2
+match.maxdrawgames = 1
+start.waittime = 1
+
+round.time=0
+round.default.offset=320,240
+round.default.anim=305
+round.default.layerno=2
+round.default.displaytime = 77
+round.default.scale = 1,1
+
+round1.snd=0,1
+round2.snd=0,1
+round3.snd=0,1
+round4.snd=0,1
+round5.snd=0,1
+round6.snd=0,1
+round7.snd=0,1
+round8.snd=0,1
+round9.snd=0,1
+round.sndtime=0
+
+; FIGHT
+fight.time = 50              ;Time to show FIGHT component
+fight.offset = 320,240       ;Component for FIGHT display
+fight.displaytime= 116
+fight.anim = 300
+fight.snd = 1,0              ;Sound to play
+fight.sndtime = 70           ;Time to play sound
+fight.scale = 1,1
+
+ctrl.time = 125              ;Time players get control after "Fight"
+
+; KO
+KO.time    = 0              ;Time to show KO component
+KO.offset  = 320,240       ;Component for KO display
+KO.anim    = 200            ;.
+KO.snd     = 2,0            ;Sound to play for KO announcement
+KO.Scale   = 2,2
+; Double KO
+DKO.offset = 320, 240
+DKO.font   = 8
+DKO.text   = Double K.O.
+DKO.displaytime = 60
+DKO.snd    = 2,1
+; Time Over
+TO.offset  = 320,240
+TO.font    = 8;,5
+TO.text    = Time Over
+TO.displaytime = 60
+TO.snd     = 2,2
+KO.sndtime = 0             ;Time to play sound for KO, DKO and TO.
+slow.time  = 60            ;Time for KO slowdown (in ticks)
+over.waittime = 45         ;Time to wait after KO before player control is stopped
+over.hittime = 10          ;Time after KO that players can still damage each other (for double KO)
+over.wintime = 45          ;Time to wait before players change to win states
+over.time = 210            ;Time to wait before round ends
+
+; Time to wait before showing win/draw message
+win.time = 60
+
+; Win text
+win.offset = 320,160
+win.font = 8,0;5,0
+win.text = %s Wins
+win.displaytime = 540
+
+; 2-player win text
+win2.offset = 320,160
+win2.font = 8,0;5,0
+win2.text = Team %s Wins
+win2.displaytime = 540
+
+; Draw text
+draw.offset = 320,160
+draw.font = 8,0
+draw.text = Draw Game
+draw.displaytime = 540
+
+
+;;"Ready" Animation
+[Begin Action 80]
+-1,-1, 0,0, 20
+80,0, 0,0, 2, ,AS188D158
+80,1, 0,0, 2, ,AS188D158
+80,2, 0,0, 2, ,AS188D158
+80,3, 1,0, 2, ,AS188D158
+80,3, 0,0, 2, ,AS188D158
+80,3, 1,0, 2, ,AS188D158
+80,3, 0,0, 2, ,AS188D158
+80,3, 1,0, 2, ,AS188D158
+80,3, 0,0, 2, ,AS188D158
+80,3, 1,0, 2, ,AS188D158
+80,3, 0,0, 2, ,AS188D158
+80,3, 1,0, 2, ,AS188D158
+80,3, 0,0, 12, ,AS188D158
+80,4, 0,0, 2, ,AS188D158
+80,5, 0,0, 2, ,AS188D158
+80,6, 0,0, 2, ,AS188D158
+80,7, 0,0, 2, ,AS188D158
+80,8, 0,0, 2, ,AS188D158
+LoopStart
+-1,-1, 0,0, -1
+
+;"Fight!" Animation
+[Begin Action 90]
+90,0, 0,0, 2, ,A;S178D168
+90,1, 0,0, 2, ,A;S178D168
+90,2, 0,0, 2, ,A;S178D168
+90,3, 0,0, 2, ,A;S178D168
+90,4, 0,0, 2, ,A;S178D168
+90,4, 0,0, 2, ,A;S178D168
+90,4, 0,0, 2, ,A;S178D168
+90,4, -2,0, 3, ,A;S178D168
+90,4, -4,0, 3, ,A;S178D168
+90,4, -6,0, 3, ,A;S178D168
+90,4, -8,0, 3, ,A;S178D168
+90,4, -10,0, 3.5, ,A;S178D168
+90,4, -12,0, 3.5, ,A;S178D168
+90,4, -14,0, 3.5, ,A;S178D168
+90,4, -16,0, 3.5, ,A;S178D168
+90,4, -18,0, 3.5, ,A;S178D168
+90,4, -20,0, 3.5, ,A;S178D168
+90,4, -22,0, 4, ,A;S178D168
+90,4, -24,0, 4, ,A;S178D168
+90,4, -26,0, 4, ,A;S178D168
+90,4, -28,0, 4, ,A;S178D168
+90,4, -30,0, 4.5, ,A;S178D168
+90,4, -32,0, 4.5, ,A;S178D168
+90,4, -34,0, 4.5, ,A;S178D168
+90,4, -36,0, 4.5, ,A;S178D168
+90,4, -38,0, 4.5, ,A;S178D168
+90,4, -40,0, 5, ,A;S178D168
+90,4, -42,0, 5, ,A;S178D168
+90,4, -44,0, 5, ,A;S178D168
+90,4, -46,0, 5, ,A;S178D168
+90,4, -48,0, 5, ,A;S178D168
+90,4, -50,0, 5, ,A;S178D168
+90,5, 0,0, 2, ,A;S178D168
+90,6, 0,0, 2, ,A;S178D168
+90,7, 0,0, 2, ,A;S178D168
+90,8, 0,0, 2, ,A;S178D168
+90,9, 0,0, 2, ,A;S178D168
+LoopStart
+-1,-1, 0,0, -1
+
+;"K.O." Animation
+[Begin Action 200]
+2002,0, 0,0, 1
+-1,-1, 0,0, 1, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+200,0, 0,0, 2, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+200,1, 0,0, 2, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+5000,2, 0,0, 2, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+200,3, 0,0, 2, ,AS188D128
+200,4, 0,0, 2, ,AS188D128
+200,5, 0,0, 2, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+200,5, 0,0, 28, ,AS188D128
+190,0, 0,0, 1, ,AS188D128
+200,4, 0,0, 2, ,AS188D128
+200,3, 0,0, 2, ,AS188D128
+200,2, 0,0, 2, ,AS188D128
+200,1, 0,0, 2, ,AS188D128
+200,0, 0,0, 2, ,AS188D128
+190,0, 300,0, 2, ,AS188D128
+LoopStart
+-1,-1,0,0,-1
+
+;-----------------------------------------------------------
+[WinIcon]
+p1.pos = 266,4
+p2.pos = 363,4
+
+; Offset for next icon (x,y)
+p1.iconoffset = 0,4 
+p2.iconoffset = 0,4
+
+; Counter text font and offset for representing wins
+p1.counter.offset = 6,8
+p1.counter.font = 3,1
+p2.counter.offset = 6,8
+p2.counter.font = 3,1
+
+p1.n.anim = 100
+p1.n.scale = 1,1
+p2.n.anim = 100
+p2.n.scale = 1,1
+
+
+p1.s.anim = 101
+p1.s.scale = 1,1
+p2.s.anim = 101
+p2.s.scale = 1,1
+
+
+p1.h.anim = 102
+p1.h.scale = 1,1
+p2.h.anim = 102
+p2.h.scale = 1,1
+
+
+p1.throw.anim = 103
+p1.throw.scale = 1,1
+p2.throw.anim = 103
+p2.throw.scale = 1,1
+
+
+p1.c.anim = 104
+p1.c.scale = 1,1
+p2.c.anim = 104
+p2.c.scale = 1,1
+
+
+p1.t.anim = 105
+p1.t.scale = 1,1
+p2.t.anim = 105
+p2.t.scale = 1,1
+
+
+p1.suicide.anim = 106
+p1.suicide.scale = 1,1
+p2.suicide.anim = 106
+p2.suicide.scale = 1,1
+
+
+p1.teammate.anim = 107
+p1.teammate.scale = 1,1
+p2.teammate.anim = 107
+p2.teammate.scale = 1,1
+
+; Win by perfect (overlay icon)
+p1.perfect.anim = -1;110
+p1.perfect.offset = 0,-8
+p2.perfect.anim = -1;110
+p2.perfect.offset = 0,-8
+;; Use icons up until this number of wins
+useiconupto = 2
+
+[Begin Action 100]
+100,0, 0,0, 2
+[Begin Action 101]
+100,1, 0,0, 2
+[Begin Action 102]
+100,2, 0,0, 2
+[Begin Action 103]
+100,3, 0,0, 2
+[Begin Action 104]
+100,4, 0,0, 2
+[Begin Action 105]
+100,5, 0,0, 2
+[Begin Action 106]
+100,6, 0,0, 2
+[Begin Action 107]
+100,7, 0,0, 2
+[Begin Action 110]
+110,0, 0,0, 2
+
+
+;Fight FX - partial sprites
+[Begin Action 300]
+300,0, 0,0, 1,, A2
+300,1, 0,0, 1,, A2
+300,2, 0,0, 1,, A2
+300,3, 0,0, 1,, A2
+300,4, 0,0, 1,, A2
+300,5, 0,0, 1,, A2
+300,6, 0,0, 1,, A2
+300,7, 0,0, 1,, A2
+300,8, 0,0, 1,, A2
+300,9, 0,0, 1,, A2
+300,10, 0,0, 1,, A2
+300,11, 0,0, 1,, A2
+300,12, 0,0, 1,, A2
+300,13, 0,0, 1,, A2
+300,14, 0,0, 1,, A2
+300,15, 0,0, 1,, A2
+300,16, 0,0, 1,, A2
+300,17, 0,0, 1,, A2
+300,18, 0,0, 1,, A2
+300,19, 0,0, 1,, A2
+300,20, 0,0, 1,, A2
+300,21, 0,0, 1,, A2
+300,22, 0,0, 1,, A2
+300,23, 0,0, 1,, A2
+300,24, 0,0, 1,, A2
+300,25, 0,0, 1,, A2
+300,26, 0,0, 1,, A2
+300,27, 0,0, 1,, A2
+300,28, 0,0, 1,, A2
+300,29, 0,0, 1,, A2
+300,30, 0,0, 1,, A2
+300,31, 0,0, 1,, A2
+300,32, 0,0, 1,, A2
+300,33, 0,0, 1,, A2
+300,34, 0,0, 1,, A2
+300,35, 0,0, 1,, A2
+300,36, 0,0, 1,, A2
+300,37, 0,0, 1,, A2
+300,38, 0,0, 1,, A2
+300,39, 0,0, 1,, A2
+300,40, 0,0, 1,, A2
+300,41, 0,0, 1,, A2
+300,42, 0,0, 1,, A2
+300,43, 0,0, 1,, A2
+300,44, 0,0, 1,, A2
+300,45, 0,0, 1,, A2
+300,46, 0,0, 1,, A2
+300,47, 0,0, 1,, A2
+300,48, 0,0, 1,, A2
+300,49, 0,0, 1,, A2
+300,50, 0,0, 1,, A2
+300,51, 0,0, 1,, A2
+300,52, 0,0, 1,, A2
+300,53, 0,0, 1,, A2
+300,54, 0,0, 1,, A2
+300,55, 0,0, 1,, A2
+300,56, 0,0, 1,, A2
+300,57, 0,0, 1,, A2
+300,58, 0,0, 1,, A2
+300,59, 0,0, 1,, A2
+300,60, 0,0, 1,, A2
+300,61, 0,0, 1,, A2
+300,62, 0,0, 1,, A2
+300,63, 0,0, 1,, A2
+300,64, 0,0, 1,, A2
+300,65, 0,0, 1,, A2
+300,68, 0,0, 1,, A2
+300,71, 0,0, 1,, A2
+300,74, 0,0, 1,, A2
+300,77, 0,0, 1,, A2
+300,80, 0,0, 1,, A2
+300,83, 0,0, 1,, A2
+300,86, 0,0, 1,, A2
+300,89, 0,0, 1,, A2
+300,92, 0,0, 1,, A2
+300,95, 0,0, 1,, A2
+300,98, 0,0, 1,, A2
+LoopStart
+-1,-1, 0,0, -1
+
+
+;Fight FX - all sprites
+[Begin Action 301]
+300,0, 0,0, 1, ,A2
+300,1, 0,0, 1, ,A2
+300,2, 0,0, 1, ,A2
+300,3, 0,0, 1, ,A2
+300,4, 0,0, 1, ,A2
+300,5, 0,0, 1, ,A2
+300,6, 0,0, 1, ,A2
+300,7, 0,0, 1, ,A2
+300,8, 0,0, 1, ,A2
+300,9, 0,0, 1, ,A2
+300,10, 0,0, 1, ,A2
+300,11, 0,0, 1, ,A2
+300,12, 0,0, 1, ,A2
+300,13, 0,0, 1, ,A2
+300,14, 0,0, 1, ,A2
+300,15, 0,0, 1, ,A2
+300,16, 0,0, 1, ,A2
+300,17, 0,0, 1, ,A2
+300,18, 0,0, 1, ,A2
+300,19, 0,0, 1, ,A2
+300,20, 0,0, 1, ,A2
+300,21, 0,0, 1, ,A2
+300,22, 0,0, 1, ,A2
+300,23, 0,0, 1, ,A2
+300,24, 0,0, 1, ,A2
+300,25, 0,0, 1, ,A2
+300,26, 0,0, 1, ,A2
+300,27, 0,0, 1, ,A2
+300,28, 0,0, 1, ,A2
+300,29, 0,0, 1, ,A2
+300,30, 0,0, 1, ,A2
+300,31, 0,0, 1, ,A2
+300,32, 0,0, 1, ,A2
+300,33, 0,0, 1, ,A2
+300,34, 0,0, 1, ,A2
+300,35, 0,0, 1, ,A2
+300,36, 0,0, 1, ,A2
+300,37, 0,0, 1, ,A2
+300,38, 0,0, 1, ,A2
+300,39, 0,0, 1, ,A2
+300,40, 0,0, 1, ,A2
+300,41, 0,0, 1, ,A2
+300,42, 0,0, 1, ,A2
+300,43, 0,0, 1, ,A2
+300,44, 0,0, 1, ,A2
+300,45, 0,0, 1, ,A2
+300,46, 0,0, 1, ,A2
+300,47, 0,0, 1, ,A2
+300,48, 0,0, 1, ,A2
+300,49, 0,0, 1, ,A2
+300,50, 0,0, 1, ,A2
+300,51, 0,0, 1, ,A2
+300,52, 0,0, 1, ,A2
+300,53, 0,0, 1, ,A2
+300,54, 0,0, 1, ,A2
+300,55, 0,0, 1, ,A2
+300,56, 0,0, 1, ,A2
+300,57, 0,0, 1, ,A2
+300,58, 0,0, 1, ,A2
+300,59, 0,0, 1, ,A2
+300,60, 0,0, 1, ,A2
+300,61, 0,0, 1, ,A2
+300,62, 0,0, 1, ,A2
+300,63, 0,0, 1, ,A2
+300,64, 0,0, 1, ,A2
+300,65, 0,0, 1, ,A2
+300,66, 0,0, 1, ,A2
+300,67, 0,0, 1, ,A2
+300,68, 0,0, 1, ,A2
+300,69, 0,0, 1, ,A2
+300,70, 0,0, 1, ,A2
+300,71, 0,0, 1, ,A2
+300,72, 0,0, 1, ,A2
+300,73, 0,0, 1, ,A2
+300,74, 0,0, 1, ,A2
+300,75, 0,0, 1, ,A2
+300,76, 0,0, 1, ,A2
+300,77, 0,0, 1, ,A2
+300,78, 0,0, 1, ,A2
+300,79, 0,0, 1, ,A2
+300,80, 0,0, 1, ,A2
+300,81, 0,0, 1, ,A2
+300,82, 0,0, 1, ,A2
+300,83, 0,0, 1, ,A2
+300,84, 0,0, 1, ,A2
+300,85, 0,0, 1, ,A2
+300,86, 0,0, 1, ,A2
+300,87, 0,0, 1, ,A2
+300,88, 0,0, 1, ,A2
+300,89, 0,0, 1, ,A2
+300,90, 0,0, 1, ,A2
+300,91, 0,0, 1, ,A2
+300,92, 0,0, 1, ,A2
+300,93, 0,0, 1, ,A2
+300,94, 0,0, 1, ,A2
+300,95, 0,0, 1, ,A2
+300,96, 0,0, 1, ,A2
+300,97, 0,0, 1, ,A2
+300,98, 0,0, 1, ,A2
+300,99, 0,0, 1, ,A2
+LoopStart
+-1,-1, 0,0, -1
+
+;Fight FX - partial sprites
+[Begin Action 305]
+305,0, 0,0, 1,, A2
+305,1, 0,0, 1,, A2
+305,2, 0,0, 1,, A2
+305,3, 0,0, 1,, A2
+305,4, 0,0, 1,, A2
+305,5, 0,0, 1,, A2
+305,6, 0,0, 1,, A2
+305,7, 0,0, 1,, A2
+305,8, 0,0, 1,, A2
+305,9, 0,0, 1,, A2
+305,10, 0,0, 1,, A2
+305,11, 0,0, 1,, A2
+305,12, 0,0, 1,, A2
+305,13, 0,0, 1,, A2
+305,14, 0,0, 1,, A2
+305,15, 0,0, 1,, A2
+305,16, 0,0, 1,, A2
+305,17, 0,0, 1,, A2
+305,18, 0,0, 1,, A2
+305,19, 0,0, 1,, A2
+305,20, 0,0, 1,, A2
+305,21, 0,0, 1,, A2
+305,22, 0,0, 1,, A2
+305,23, 0,0, 1,, A2
+305,24, 0,0, 1,, A2
+305,25, 0,0, 1,, A2
+305,26, 0,0, 1,, A2
+305,27, 0,0, 1,, A2
+305,28, 0,0, 1,, A2
+305,29, 0,0, 1,, A2
+305,30, 0,0, 1,, A2
+305,31, 0,0, 1,, A2
+305,32, 0,0, 1,, A2
+305,33, 0,0, 1,, A2
+305,34, 0,0, 1,, A2
+305,35, 0,0, 1,, A2
+305,36, 0,0, 1,, A2
+305,37, 0,0, 1,, A2
+305,38, 0,0, 1,, A2
+305,39, 0,0, 1,, A2
+305,40, 0,0, 1,, A2
+305,41, 0,0, 1,, A2
+305,42, 0,0, 1,, A2
+305,43, 0,0, 1,, A2
+305,44, 0,0, 1,, A2
+305,45, 0,0, 1,, A2
+305,46, 0,0, 1,, A2
+305,47, 0,0, 1,, A2
+305,48, 0,0, 1,, A2
+305,49, 0,0, 1,, A2
+305,50, 0,0, 1,, A2
+305,51, 0,0, 1,, A2
+305,52, 0,0, 1,, A2
+305,53, 0,0, 1,, A2
+305,54, 0,0, 1,, A2
+305,55, 0,0, 1,, A2
+305,56, 0,0, 1,, A2
+305,57, 0,0, 1,, A2
+305,58, 0,0, 1,, A2
+305,59, 0,0, 1,, A2
+305,60, 0,0, 1,, A2
+305,61, 0,0, 1,, A2
+305,62, 0,0, 1,, A2
+305,63, 0,0, 1,, A2
+305,64, 0,0, 1,, A2
+305,65, 0,0, 1,, A2
+305,68, 0,0, 1,, A2
+305,71, 0,0, 1,, A2
+305,74, 0,0, 1,, A2
+305,77, 0,0, 1,, A2
+305,80, 0,0, 1,, A2
+305,83, 0,0, 1,, A2
+305,86, 0,0, 1,, A2
+305,89, 0,0, 1,, A2
+305,92, 0,0, 1,, A2
+305,95, 0,0, 1,, A2
+305,98, 0,0, 1,, A2
+LoopStart
+-1,-1, 0,0, -1
+

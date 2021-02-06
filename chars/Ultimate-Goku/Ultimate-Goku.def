@@ -1,0 +1,28 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name ="GokuV1"
+displayname ="Goku"
+versiondate =09,07,2009
+mugenversion =04,14,2002
+author ="Jeffrey174"
+pal.defaults =1,2,3,4
+
+[Files]
+sprite =Goku.sff
+anim =Goku.air
+sound =Goku.snd
+cmd =Goku.cmd
+cns =Goku.cns
+stcommon =common.cns
+st =Goku.cns
+pal1=pal1.act
+pal2=pal2.act
+st1=hypers.cns
+
+[Arcade]
+intro.storyboard = 
+ending.storyboard = 

@@ -1,0 +1,99 @@
+Practice Vegeta by Detah e atualizado por mugen mundo
+-----------------------------------------------------------------------
+descrição: este é o vegeta q lutou contra freeza em namek 
+programação:50% atualizada
+fx=100 novos 
+golpes(combos,poderes):17 ao todo por enquanto
+
+((Lista de golpes))
+[Command]
+name = "renmsm"
+command = s
+time = 1
+;-| Special Motions |------------------------------------------------------
+
+[Command]
+name = "world"
+command = D, DF, F, x
+
+[Command]
+name = "place"
+command =D,F,B,y
+time = 50
+
+[Command]
+name = "zanzokencombo"
+command = D, DF, F, z
+
+[Command]
+name = "zanzokenpunch"
+command = y+z
+
+[Command]
+name = "smack"
+command = D,B,a
+
+[Command]
+name = "take"
+command = D,DF,F,b
+time = 50
+
+[Command]
+name = "elbow"
+command = D, DF, F, b
+
+[Command]
+name = "M-elbow"
+command = D, DB, B, b
+
+[Command]
+name = "trikick"
+command = D, DF, F, a
+
+[Command]
+name = "multikick"
+command = D, DB, B, a
+
+[Command]
+name = "kishot"
+command = D, DF, F, y
+
+[Command]
+name = "renzoku"
+command = D, DB, B, D, DB, B, y
+time = 50
+
+[Command]
+name = "instant"
+command = a+x
+
+[Command]
+name = "ufire"
+command = /UF
+time = 1
+
+[Command]
+name = "dfire"
+command = /DF
+time = 1
+
+[Command]
+name = "bufire"
+command = /UB
+time = 1
+
+[Command]
+name = "bdfire"
+command = /DB
+time = 1
+
+observações!
+em breve tera muito mais poderes e fxs.
+ainda faltam sons e sparks.
+
+(((((((creditos & agradecimantos))))))))
+_ ao francynaldo da frs games por ceder os fxs
+_ a detah por ter feito o prac vegeta 
+_ aos meus amigos da mugen mundo que sempre me ajudam quando eu preciso
+_ e a todos que joguem com ele e se usei algo de algume e naum mencionei me desculpem!!
+

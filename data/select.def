@@ -1,0 +1,128 @@
+---------------------------------------------------------------------
+                       WWW.MUGENKING.BLOGSPOT.COM  
+;---------------------------------------------------------------------
+[Characters]
+Goku
+Goku Namek by The Heartbreaker
+Goku Legend SSJ
+Goku SSJ
+Goku SSJ2
+ Goku SSJ3
+Goku Deus
+Ultimate-Goku
+Vegeta Saiyan
+Vegeta SSJ
+VegetaAS
+Vegeta SSJ2
+Majin Vegeta SSJ2
+ 
+Goten kid
+Goten SSJ kid
+Trunks kid
+Trunks SSJ kid
+Trunks
+Trunks Armor
+Trunks SSJ2
+Trunkz 1.53
+Gohan saiyan
+Gohan Armor SSJ
+Gohan SSJ2
+Gohan SSJ teen
+Gohan SSJ Z
+gohan sns
+ Gotenks SSJ
+ Vegetto
+ Vegetto SSJ2
+Gotenks SSJ
+super gogeta
+Cell 2nd Form
+Cell
+Cell Jr Invasion
+King Piccolo
+Krillin (Saiyan Saga)
+Krillin Z
+Nappa
+Frieza1
+Frezaa Full Power
+Nuova Shenron
+Omega Shenron
+Majin Buu
+Super Buu
+Kid Buu
+kakarotto  Normal
+namek goku
+Goku ssj god
+Ginyu
+Piccolo
+Raditz
+Yamcha
+Tien
+Zangya
+Super 17
+son goku
+SSJ3songoku
+Turles
+Vegeta Buu
+Vegeta Transform
+PracVegeta
+SuperVegeta
+Bejita
+Tarble
+Supreme Kai
+Puipui
+Taopai
+Tapion
+Saiyaman1
+Janemba
+Hero
+Garlic Jr
+Broly
+
+Broly LSSJ3
+Bojack_normal
+Bardock
+Bardock SSJ
+Baby Vegeta
+18
+16
+Android 13
+Android 17
+Android 18
+ Gogeta Ssj4
+  Goku kid SSJ3
+Baby Tuffle
+Goku SSJ4
+Vegeta SSJ4
+randomselect
+;-----------------------
+[ExtraStages]
+ ;Put extra stages here. They will be available in VS and Watch modes.
+ ;For example, you can insert "stages/mybg.def".
+
+stages/NewTenkaichi.def
+
+stages/dbkai-mountaintop.def
+stages/dbz1-starrynight.def
+stages/SB2-blizzard.def
+stages/SB2-snow_day.def
+stages/SB2-snowy_aurora_borealis.def
+stages/SBE-GarlicJr-Lookout2_M11.def
+stages/Arctic.def
+stages/Baba_Arena.def
+stages/BardockStage.def
+stages/Burning_Forest.def
+stages/Capsule_Corp_HR.def
+
+;---------------------------------------------------------------------
+[Options]
+ ;Here you set the maximum number of matches to fight before game ends
+ ;in Arcade Mode. The first number is the number of matches against
+ ;characters with order=1, followed by order=2 and order=3 respectively.
+ ;For example, for 4,3,1 you will fight up to 4 randomly-picked
+ ;characters who have order=1, followed by 3 with order=2 and 1 with
+ ;order=3.
+arcade.maxmatches = 6,1,1,0,0,0,0,0,0,0
+
+ ;Maximum number of matches to fight before game ends in Team Mode.
+ ;Like arcade.maxmatches, but applies to Team Battle.
+team.maxmatches = 4,1,1,0,0,0,0,0,0,0

@@ -1,0 +1,23 @@
+;>||============================================~>/#[ Bejita.DEF ]#\<~============================================||<
+;
+;>||======================================~>/#[ Character Informations ]#\<~======================================||<
+;
+[Info];
+Name			= "Bejita";					Name of character
+DisplayName		= "Vegeta batalla";					Name of character to display
+VersionDate		= 03,02,2003;				Version date of character
+MUGENVersion	= 04,14,2001;				Version of M.U.G.E.N character works on
+Author			= "EnHanCer and Thrawn";	Character author names
+;
+;>||==========================================~>/#[ Character Files ]#\<~==========================================||<
+;
+[Files];
+CMD			= States.CNS;		Command set
+CNS			= States.CNS;		Constants
+ST			= States.CNS;		States
+StCommon	= States.CNS;		Common states
+Sprite		= Sprites.SFF;		Sprites
+Anim		= Animations.AIR;	Animation
+Sound		= Sounds.SND;		Sounds
+Pal1		= Pallette#01.ACT;	Pallette #01 - mp's pallette, thanks
+Pal2		= Pallette#02.ACT;	Pallette #02 - Mine :/

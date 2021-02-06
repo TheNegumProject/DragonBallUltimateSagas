@@ -1,0 +1,27 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "Goku Namek by The Heartbreaker"
+displayname = "Goku Namek"
+versiondate = 20,06,2010
+mugenversion = 14,04,2002
+author = "The Heartbreaker"
+pal.defaults = 1
+
+[Files]
+sprite = gohan.sff
+anim = gohan.air
+sound = gohan.snd
+cmd = gohan.cmd
+cns = gohan.cns
+stcommon = gohan1.cns
+st = gohan.cns
+pal1 = gohan.act
+;pal2 = adultgohan.act
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 

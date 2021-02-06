@@ -1,0 +1,27 @@
+;***************************************************************************;
+;******************* Created in Fighter Factory Ultimate *******************;
+;*******************      http://www.virtualltek.com     *******************;
+;***************************************************************************;
+
+[Info]
+name = "son goku"
+displayname = "Son Goku"
+versiondate = 10/09/2011
+mugenversion = 04,14,2002
+author = "The_Heartbreaker"
+pal.defaults = 1,2
+
+[Files]
+sprite = Son Goku.sff
+anim = Son Goku.air
+sound = Son Goku.snd
+cmd = Son Goku.cmd
+cns = Son Goku.cns
+stcommon = common1.cns
+st = Son Goku.cns
+st1 = Helpers
+pal1 = 1.act
+
+[Arcade]
+;intro.storyboard = 
+;ending.storyboard = 
